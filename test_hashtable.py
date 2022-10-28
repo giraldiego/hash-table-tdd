@@ -8,6 +8,7 @@ def test_should_not_shrink_when_removing_elements():
     pass
 
 
+# Define a Custom HashTable Class
 def test_should_create_hashtable():
     assert HashTable(capacity=100) is not None
 
@@ -28,6 +29,7 @@ def test_should_create_empty_value_slots():
     assert actual_values == expected_values
 
 
+# Find a Value by Key
 def test_should_insert_key_value_pairs():
     hash_table = HashTable(capacity=100)
 
@@ -58,3 +60,6 @@ def test_should_insert_none_value():
     hash_table = HashTable(capacity=100)
     hash_table["key"] = None
     assert None in hash_table.values
+
+
+# Find a Value by Key
